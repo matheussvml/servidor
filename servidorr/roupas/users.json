@@ -1,0 +1,116 @@
+[
+    {
+      "username": "novoUsuario",
+      "password": "$2b$10$BO2XkzVoUjhZbi3vFsFfXunFHU5i9G8oySTiPCJsPrySOvRLh7oI6"
+    },
+    {
+      "username": "admin",
+      "password": "$2b$10$skChaoVe3PUJVqdfyVMxNePoUPlP152wGNaFzEWWsbnM7nlP2vSPe",
+      "isAdmin": true
+    },
+    {
+      "username": "user",
+      "password": "$2b$10$p03WcW0sj9t7./fKmvEIf.0vAaiolIuREEHPTOLFR8wwp7Ufyip6O",
+      "isAdmin": false
+    },
+    {
+      "username": "matheus",
+      "password": "$2b$10$G0iODI7/5tY3n/lbxmDPu.6a9D2qXdzGN0InIiy.ACnR82G6KS726",
+      "isAdmin": true
+    },
+    {
+      "username": "edinei",
+      "password": "$2b$10$dU/vW4iraXr7wgxSqTpdVeqyY8cpOt7ud1O0zVx.M7KVEgv2r8iTq",
+      "isAdmin": true
+    },
+    {
+      "id": 1730763521015,
+      "username": "teste",
+      "password": "$2b$10$1a8icfXFoO0FXe91qazVZe.ehunbQ3lGJXLySr/3tLXmbyBWRHbn2",
+      "isAdmin": false
+    },
+    {
+      "id": 1730763758947,
+      "username": "luana",
+      "password": "$2b$10$stRiwKvQlPJ61dWvb6NDUetVG8eOoqh5vzAufYvMKMNyDezU0ij5W",
+      "isAdmin": true
+    },
+    {
+      "id": 1730766262798,
+      "username": "peceme",
+      "password": "$2b$10$O66QPeJo4oIphbn0AICuIOXF6ErqxFH6h/6qksUmBdMDzUvJTHXEK",
+      "isAdmin": false
+    },
+    {
+      "id": 1730805113977,
+      "username": "lauana",
+      "password": "$2b$10$QI/o6PNmWV5ng/01g3xAceHsDUnuE7MuJ5JfcsWicL6ZIsXtIt.Ya",
+      "isAdmin": true
+    },
+    {
+      "id": 1730806406720,
+      "username": "samir da silva",
+      "password": "$2b$10$qDEJBkVyl6Kf6ap/Lh50qO0lw5XHShHL.1UQWBih1GJsSMAyyprvm",
+      "isAdmin": false
+    },
+    {
+      "id": 1730813747563,
+      "username": "lucas",
+      "password": "$2b$10$ubMfQ3SATGKB3KXzdkVLseFPNJgrmLWC9CLSi4TKoCbqUF5dPCZHy",
+      "isAdmin": true
+    },
+    {
+      "id": 1730846913267,
+      "username": "castanheba",
+      "password": "$2b$10$Qr4T5PLiLwg86b7a6m3Pr.QsqA9kOo5VI9M6yLKABwvSDxGnVNyty",
+      "isAdmin": true
+    },
+    {
+      "id": 1730851674970,
+      "username": "germano",
+      "password": "$2b$10$O4fgRq3awIneADOmSJSAzO8tk70Wokw8KL1BZCF1Pc.1zoGFcb/ZS",
+      "isAdmin": false
+    },
+    {
+      "id": 1730859397083,
+      "username": "marco",
+      "password": "$2b$10$XFvpk6ZCMrHC49EXeBXZgO8P6j/w31vOX/T/GJZK3Gtg8J2tkLziG",
+      "isAdmin": true
+    },
+    {
+      "id": 1730924008871,
+      "username": "testee",
+      "password": "$2b$10$ipi4qP9AEP6tVRil7jT7FubMiZicCFWiMbQq0SgZKbZYtBQ8Xwl4q",
+      "isAdmin": false
+    },
+    {
+      "id": 1730925737495,
+      "username": "alice",
+      "password": "$2b$10$QMAGTWVHF3dTBXLRUE6UbuGza1oD.6C2tTXZXrU60XhqHOQniGVva",
+      "isAdmin": true
+    },
+    {
+      "id": 1730926583667,
+      "username": "teste1",
+      "password": "$2b$10$KmmD5G5h0HdejFTjWgvj8uoqqDIpqUplOqMBkVqSFDkfQbAubbwkK",
+      "isAdmin": true
+    },
+    {
+      "id": 1730929254603,
+      "username": "leite",
+      "password": "$2b$10$kbejlUbU6oI.iIJqTsO8neI6RG/qzluf5m.boQAV7/VQ9WdzF52cW",
+      "isAdmin": true
+    },
+    {
+      "id": 1730987701469,
+      "username": "castanha",
+      "password": "$2b$10$Pwmbw9YofbLoDlZ2UtBkfuP93wzxazM7ZDT2bSkBFYIm5Ex2C0pia",
+      "isAdmin": false
+    },
+    {
+      "id": 1730993532006,
+      "username": "leticia",
+      "password": "$2b$10$O0yQAdX.My24w4ynzcqFUOV6k5cB48xvJp0ny56rDrYCZ2DBkYd3i",
+      "isAdmin": false
+    }
+  ]

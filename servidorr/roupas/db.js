@@ -3,9 +3,9 @@ const mysql = require('mysql2');
 const db = mysql.createConnection({
     host: 'localhost', // Endereço local
     port: 3306,        // Porta padrão do MySQL
-    user: 'root',      // Usuário do MySQL
-    password: '132465', // Senha do MySQL
-    database: 'loja'  // Nome do banco de dados
+    user: 'root',      // Usuário do seu MySQL
+    password: '12345678', // Senha do padrão do MySQL
+    database: 'loja'  // Nome do seu banco de dados
 });
 
 db.connect((err) => {

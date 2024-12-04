@@ -1,0 +1,61 @@
+-- Criando a database loja e usando
+create database loja;
+use loja;
+
+-- Criar tabela de roupas
+CREATE TABLE roupas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    imagem TEXT NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    descr TEXT
+);
+
+-- Inserindo dados de teste
+INSERT INTO roupas (id, nome, preco, imagem, categoria, descr) VALUES
+(1, 'calça', 150.00, 'https://images.tcdn.com.br/img/img_prod/1254843/conjunto_tiras_na_frente_com_legging_bicolor_roupas_fitness_academia_feminino_75_1_e5a75c6053a8f92648c3221e67e1ce08.jpg', 'feminino', 'calça legging para treino feminina 2024 atualizada');
+
+
+-- Criar tabela usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY, -- O ID é fornecido manualmente no momento da inserção
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    isAdmin BOOLEAN DEFAULT FALSE
+);
+
+-- Inserindo dados de teste
+INSERT INTO usuarios (id, username, password, isAdmin) VALUES
+(1730763521015, 'teste', '$2b$10$1a8icfXFoO0FXe91qazVZe.ehunbQ3lGJXLySr/3tLXmbyBWRHbn2', FALSE),
+(1730763758947, 'luana', '$2b$10$stRiwKvQlPJ61dWvb6NDUetVG8eOoqh5vzAufYvMKMNyDezU0ij5W', TRUE),
+(1730766262798, 'peceme', '$2b$10$O66QPeJo4oIphbn0AICuIOXF6ErqxFH6h/6qksUmBdMDzUvJTHXEK', FALSE),
+(1730805113977, 'lauana', '$2b$10$QI/o6PNmWV5ng/01g3xAceHsDUnuE7MuJ5JfcsWicL6ZIsXtIt.Ya', TRUE),
+(1730806406720, 'samir da silva', '$2b$10$qDEJBkVyl6Kf6ap/Lh50qO0lw5XHShHL.1UQWBih1GJsSMAyyprvm', FALSE),
+(1730813747563, 'lucas', '$2b$10$ubMfQ3SATGKB3KXzdkVLseFPNJgrmLWC9CLSi4TKoCbqUF5dPCZHy', TRUE),
+(1730846913267, 'castanheba', '$2b$10$Qr4T5PLiLwg86b7a6m3Pr.QsqA9kOo5VI9M6yLKABwvSDxGnVNyty', TRUE),
+(1730851674970, 'germano', '$2b$10$O4fgRq3awIneADOmSJSAzO8tk70Wokw8KL1BZCF1Pc.1zoGFcb/ZS', FALSE),
+(1730859397083, 'marco', '$2b$10$XFvpk6ZCMrHC49EXeBXZgO8P6j/w31vOX/T/GJZK3Gtg8J2tkLziG', TRUE),
+(1730924008871, 'testee', '$2b$10$ipi4qP9AEP6tVRil7jT7FubMiZicCFWiMbQq0SgZKbZYtBQ8Xwl4q', FALSE),
+(1730925737495, 'alice', '$2b$10$QMAGTWVHF3dTBXLRUE6UbuGza1oD.6C2tTXZXrU60XhqHOQniGVva', TRUE),
+(1730926583667, 'teste1', '$2b$10$KmmD5G5h0HdejFTjWgvj8uoqqDIpqUplOqMBkVqSFDkfQbAubbwkK', TRUE),
+(1730929254603, 'leite', '$2b$10$kbejlUbU6oI.iIJqTsO8neI6RG/qzluf5m.boQAV7/VQ9WdzF52cW', TRUE),
+(1730987701469, 'castanha', '$2b$10$Pwmbw9YofbLoDlZ2UtBkfuP93wzxazM7ZDT2bSkBFYIm5Ex2C0pia', FALSE),
+(1730993532006, 'leticia', '$2b$10$O0yQAdX.My24w4ynzcqFUOV6k5cB48xvJp0ny56rDrYCZ2DBkYd3i', FALSE);
+
+-- Exemplo de inserir um usuario
+insert into usuarios (id, username, password, isAdmin) values (1, 'matheus', '$2b$10$VXGU6Ejv3OLwXweEo7Cn2eU6YnDoTl9eNpMUmbbnIjc6OqhLXDhPm', true);
+
+-- Exibir as duas tabelas
+SELECT * FROM usuarios;
+SELECT * FROM roupas;
+
+-- Exibir os usuarios 
+describe usuarios;
+
+-- Selecionar um usuario especifico
+select * from usuarios where username = 'matheus';
+
+-- Deletar as tabelas
+drop table roupas;
+drop table usuarios;

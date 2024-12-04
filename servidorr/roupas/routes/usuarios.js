@@ -26,17 +26,21 @@ router.post('/register', async (req, res) => {
         // Criptografar senha
         const hashedPassword = await bcrypt.hash(password, 10);
         const sqlInsertUser = 'INSERT INTO usuarios (username, password, isAdmin) VALUES (?, ?, ?)';
+        
         db.query(sqlInsertUser, [username, hashedPassword, false], (err, results) => {
             if (err) {
                 console.error('Erro ao registrar usuário:', err);
                 return res.status(500).send('Erro ao registrar usuário');
             }
-            res.status(201).json({ message: 'Usuário registrado com sucesso!' });
-            message: 'Usuário registrado com sucesso!';
-            userId: results.insertId
+            // Resposta com mensagem e ID do usuário
+            res.status(201).json({
+                message: 'Usuário registrado com sucesso!',
+                userId: results.insertId
+            });
         });
     });
 });
+
 
 
 
